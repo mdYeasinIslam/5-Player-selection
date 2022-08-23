@@ -13,3 +13,25 @@ function getElementAndSetName(elementId, btnId) {
         getButtonId.disabled = 'true';
     }
 }
+//find html element by id
+function getElementById(elementID) {
+    const getElement = document.getElementById(elementID);
+    if (getElement.tagName == "INPUT") {
+        const getElementString = getElement.value
+        const elementValue = parseFloat(getElementString);
+        return elementValue;
+    }
+    else {
+        const getElementString = getElement.innerText
+        const elementValue = parseFloat(getElementString);
+        return elementValue;
+    }
+}
+
+//set value in another element by using id
+
+function setValueById(element, value) {
+    const getElement = document.getElementById(element);
+    getElement.innerText = value;
+    return getElement;
+}
