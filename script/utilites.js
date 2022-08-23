@@ -12,6 +12,9 @@ function getElementAndSetName(elementId, btnId) {
         const getButtonId = document.getElementById(btnId);
         getButtonId.disabled = 'true';
     }
+    else {
+        alert('You are already added 5 players.....')
+    }
 }
 //find html element by id
 function getElementById(elementID) {
